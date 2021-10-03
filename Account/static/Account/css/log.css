@@ -1,0 +1,38 @@
+
+ @font-face {
+  font-family: myFont;
+  src: url('../../Account/fonts/vazir-font-v16.1.0/Vazir-Bold.woff'); 
+}
+
+
+
+body{
+    background-image: url(../../Account/images/pic3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    Background-attachment:scroll;
+    font-family: myFont;
+
+}
+
+
+.f_box{
+    background-color: rgb(255, 255, 255,0.2);
+    margin-top: 100px;
+
+  }
+  
+  
+  button{
+      background-image: linear-gradient(to top, #565d7a, #9c93a5);
+      border: 10em;
+      
+  }
+
+  .f_te{
+    color: #ffffff;
+    direction: rtl;
+    font-weight: bold;
+   
+   
+  }

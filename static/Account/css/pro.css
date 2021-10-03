@@ -1,0 +1,92 @@
+@font-face {
+  font-family: myFont;
+  src: url('../../Account/fonts/vazir-font-v16.1.0/'); 
+}
+
+
+body{
+  background-image: url(../../Account/images/pic1.jpg);
+  background-repeat: no-repeat; 
+  background-position: center  bottom;
+  background-size: cover;
+  font-family: myFont;
+}
+
+/*---------------------------------------------*/
+a {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+  color: #fff;
+}
+
+a:link {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+/*---------------------------------------------*/
+
+.f_sty{
+    background-color: #dbdbdd;
+    
+ 
+}
+
+.f_text_sty{
+font-size:large;
+}
+
+
+button{
+    background-image: linear-gradient(to top, #565d7a, #69567a);
+    border: 10em;
+    
+}
+
+
+.s_te1{
+  color: #2a1a57;
+  padding-right: 10px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+
+
+.f_box{
+  background-color: rgb(255, 255, 255,0.7);
+
+}
+
+
+button{
+    background-image: linear-gradient(to top, #565d7a, #9c93a5);
+    border: 10em;
+    
+}
+
+.f_te{
+  color: #2a1a57;
+  direction: rtl;
+  font-weight: bold;
+ 
+}
+
+.dir{
+  direction: ltr;
+}

@@ -1,0 +1,56 @@
+
+body{
+    background-image: url(../../Account/images/pic2.jpg);
+
+     background-repeat: no-repeat; 
+    background-position: center center;
+    /* Background-attachment:scroll; */ 
+}
+
+
+/*---------------------------------------------*/
+a {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+  color: #fff;
+}
+
+/*---------------------------------------------*/
+.f_bg_color{
+  background-color: rgb(250, 250, 250,0.8);
+}
+
+
+button{
+    background-image: linear-gradient(to top, #565d7a, #69567a);
+    border: 10em;
+}
+
+.dir{
+  direction: ltr;
+}
+
+
+.s_te{
+  color: rgb(59, 57, 57);
+  direction: rtl;
+  font-weight: bold;
+
+}
+
+

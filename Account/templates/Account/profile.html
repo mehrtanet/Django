@@ -1,0 +1,99 @@
+{% extends 'base.html' %} 
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %} Profile {% endblock title %}
+
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'Account/css/pro.css' %} ">
+{% endblock css %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<br>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-lg-4 col-md-6 col-12 mx-auto" >
+            <div class="card p-4 mb-3 f_sty f_box f_te" >
+
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> نام کاربری :  </span>
+                <span class="  d-line s_te1 " > {{ user.username}} </span>
+            </div>
+            
+           <div class=" mb-2">
+               <span class="font-weight-bold d-line "> نام : 
+               <span class="d-line  s_te1"> {{ user.first_name }} </span></span>
+           </div>
+             
+          <div class=" mb-2">
+               <span class="font-weight-bold d-line  "> نام خانوادگی : 
+               <span class="d-line  s_te1"> {{ user.last_name }} </span></span>
+          </div>
+             
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line  "> ایمیل : 
+                <span class="d-line  s_te1"> {{ user.email }} </span></span> 
+            </div>
+
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> سن : 
+                <span class="d-line  s_te1"> {{ user.profile.age|default:'کد ملی  ثبت نشده '}} </span></span> 
+            </div>
+            
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> کد ملی : 
+                <span class="d-line  s_te1"> {{ user.profile.n_code|default:' کد ملی ثبت نشده ' }} </span></span> 
+            </div>
+
+            
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> تلفن تماس : 
+                <span class="d-line s_te1"> {{ user.profile.phone|default:'شماره ای ثبت نشده ' }} </span></span> 
+            </div>
+
+
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> بیوگرافی : 
+                <span class="d-line s_te1"> {{ user.profile.bio|safe }} </span></span>  
+            </div>
+
+
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line "> جنسیت : 
+                <span class="d-line  s_te1"> {{ user.profile.gender }} </span></span>  
+            </div>
+
+           <div class=" mb-2">
+                <span class="font-weight-bold d-line"> رزومه : 
+                 <a href= {{ user.profile.cv.url }} > دانلود رزومه </a> </span>
+            </div>
+             
+            <div class=" mb-2">
+                <span class="font-weight-bold d-line"> تاریخ عضویت : 
+                    <span class="d-line font-weight-normal s_te1"> {{ user.profile.get_date }} </span></span> 
+            </div>  
+
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------Edit Profile's Form ------->
+<div class="row ">
+    <div class="col-lg-4 col-md-6 col-12 mx-auto ">
+        <div class="card p-4 mb-3 f_sty  f_box f_te" >
+            <form action="." method='POST'>
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="dir my-3">
+                    <button type="submit" class="btn btn-warning"> به روز رسانی </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endif  %}
+{% endblock content %}

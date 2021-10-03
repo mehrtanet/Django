@@ -1,0 +1,45 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+/* 
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../../Account/fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url('../../Account/fonts/OpenSans/OpenSans-Bold.ttf'); 
+} */
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+
+/* 
+body{
+  background-color:#27040a ;
+} */
+
+/*---------------------------------------------*/
+/* a {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+  color: #fff;
+}
+ */

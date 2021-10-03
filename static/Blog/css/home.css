@@ -1,0 +1,14 @@
+body{
+    background-image: url(../../Blog/images/pic1.jpg);
+   
+    background-size: cover;
+}
+
+
+h1{
+margin-left: 400px;
+margin-top: 300px;
+font-weight: bolder;
+text-shadow: 6px 6px 7px rgb(126, 122, 122);
+
+} 

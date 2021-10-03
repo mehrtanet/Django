@@ -1,0 +1,80 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url('../fonts/OpenSans/OpenSans-Bold.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+body{
+    background-image: url(../../Blog/images/pic.jpg);
+    background-repeat: no-repeat; 
+    /* background-position: center  bottom; */
+    background-size: cover;
+    font-family: OpenSans-Regular, sans-serif;
+  }
+  
+  /*---------------------------------------------*/
+.te{
+  color: #ffffff;
+  direction: rtl;
+}
+
+.sp{
+    color: #868080;
+    display: inline;
+}
+
+
+
+a{
+  font-family: OpenSans-Regular, sans-serif;
+  text-decoration: none;
+  color: #b96a57;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+img{
+  border-radius: 10px;
+}
+
+h1{
+  color: #ffffff;
+  direction: rtl;
+  margin-top: 30px;
+}
+
+.ul_1{
+  list-style-image: url(../../Blog/images/au_icon.png);
+ 
+}
+
+.ul_2{
+  list-style-image: url(../../Blog/images/dt_icon.png);
+
+}
+
+.ul_3{
+  list-style-image: url(../../Blog/images/co_icon.png);
+ 
+}
+
+

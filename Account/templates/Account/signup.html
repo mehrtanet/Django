@@ -1,0 +1,33 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Signup{% endblock title %}
+
+{% block css %}
+{{ block.super }}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Account/css/sign.css' %} ">
+
+{% endblock css %}
+
+
+{% block content %}
+<br>
+<div class="container-fluid ">
+    <div class="row " >
+        <div class="col-lg-4 col-md-6 col-12 mx-auto " >
+            <div class="card p-4 mb-3 f_bg_color s_te" >
+                <form action="." method='POST' enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% include 'includes/messages.html' %}
+                    {{ form|crispy }}
+                    <div class="dir">
+                        <button type="submit" class="btn btn-primary  " > ثبت نام کنید  </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

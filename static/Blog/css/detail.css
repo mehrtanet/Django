@@ -1,0 +1,62 @@
+body{
+    background-image: url(../../Blog/images/pic2.jpg);
+    background-repeat: no-repeat; 
+    /* background-position: center  bottom; */
+    background-size: cover;
+  
+  }
+  
+  /*---------------------------------------------*/
+img{
+  text-align: center;
+  border: solid #ffffff 5px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 300px;
+}
+
+.im{
+  text-align: center;
+}
+
+.sp{
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.sp1{
+  color: #868080;
+}
+
+.te{
+  color: #ffffff;
+  direction: rtl;
+  padding-inline-start: 5px;
+}
+
+.mar{
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.ul_1{
+  list-style-image: url(../../Blog/images/au_icon.png);
+  margin-right: 10px;
+}
+
+.ul_2{
+  list-style-image: url(../../Blog/images/dt_icon.png);
+  margin-right: 10px;
+}
+
+.ul_3{
+  list-style-image: url(../../Blog/images/co_icon.png);
+  margin-right: 10px;
+}
+
+
+a{
+  font-size: x-large;
+  color: darkmagenta;
+}
